@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body style="background-image: url('Frame 2.png');">
+
+  <!-- Шапка -->
+  <div class="header">
+    <!-- Логотип -->
+    <div class="logo">
+      <img src="Сталин9.png" alt="Логотип">
+    </div>
+    <!-- Основное меню -->
+    <nav>
+      <a href="#">Главная</a>
+      <a href="#">О нас</a>
+      <a href="#">Контакты</a>
+    </nav>
+    
+    <!-- Меню-бургер -->
+    <div class="burger-menu">
+      <button onclick="toggleMenu()">Меню</button>
+    </div>
+  </div>
+
+  <!-- Блок контента с адаптивным изображением -->
+  <div class="content">
+    <img src="Шапка2.png" alt="Адаптивное изображение">
+  </div>
+
+  <!-- Подвал сайта -->
+  <div class="footer">
+    <div>Краткий текст о компании</div>
+    <div class="social">
+      <a href="#"><img src="tg-1001764902466 1.png" alt="Иконка 1"></a>
+      <a href="#"><img src="f7666a9d88c30edeba372c0306c14709 1.png" alt="Иконка 2"></a>
+      <a href="#"><img src="xxx.png" alt="Иконка 3"></a>
+    </div>
+  </div>
+
+  <!-- Выплывающее окно (меню) -->
+  <div class="menu-dropdown">
+    <ul>
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menuDropdown = document.querySelector('.menu-dropdown');
+      menuDropdown.classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
