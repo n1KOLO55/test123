@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Better VCR; /* Гарнитура шрифта */
+  src: url(better-vcr_0.ttf); /* Путь к файлу со шрифтом */
+ }
 .header {
   padding: 20px;
   text-align: center;
@@ -5,17 +9,25 @@
   justify-content: space-between; /* добавляем отступ между ссылками меню */
   align-items: center; /* выравниваем содержимое по центру */
 }
-
 /* CSS стили для логотипа */
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin-right: 20px;
 }
 
 .logo img {
   max-width: 100%;
   height: auto;
+}
+.burger_img {
+  width: 50px;
+  height: 50px;
+}
+.burger_img_close {
+  width: 50px;
+  height: 50px;
+  margin-right: 20%;
 }
 
 /* CSS-стили для ссылок меню в шапке */
@@ -25,9 +37,32 @@
 }
 
 .header nav a {
-  margin-right: 20px; /* добавляем отступ между ссылками меню */
+  margin-right: 40px; /* добавляем отступ между ссылками меню */
+  text-decoration: none; /* убираем подчеркивание */
+  color: #FFD700;
+  font-family: Better VCR;
 }
-
+.header nav a:hover {
+  color: #D32222; /* Цвет ссылки при наведении на нее курсора мыши */  
+  text-decoration: underline; /* Добавляем подчеркивание */
+ }
+a {
+  color: #FFD700 /* Цвет обычной ссылки */ 
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+ }
+ a:hover {
+  color: #D32222; /* Цвет ссылки при наведении на нее курсора мыши */  
+  text-decoration: underline; /* Добавляем подчеркивание */
+ }
+ .burger_text {
+  text-decoration: none; /* убираем подчеркивание */
+  font-family: Better VCR;
+   color: #FFD700 /* Цвет обычной ссылки */ 
+ }
+ .burger_text:hover {
+  color: #D32222; /* Цвет ссылки при наведении на нее курсора мыши */  
+  text-decoration: underline; /* Добавляем подчеркивание */
+}
 /* CSS-стили для меню-бургера */
 .burger-menu {
   display: none;
@@ -70,23 +105,35 @@
 
 /* CSS-стили для подвала */
 .footer {
+  width: auto;
   color: #fff;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.foot_text {
+  font-family: Better VCR;
+  color: #FFD700 ;/* Цвет обычной ссылки */
+  font-size: 8pt;
+}
 
 .social {
   display: flex;
   align-items: center;
-  gap: 10px; /* добавляем отступ между иконками соцсетей */
+  gap: 30px; /* добавляем отступ между иконками соцсетей */
+
+}
+.t_social {
+  font-family: Better VCR;
+  color: #FFD700 ;/* Цвет обычной ссылки */
+  text-decoration: none;
 }
 
 /* Стили для выплывающего окна (меню) */
 .menu-dropdown {
   position: fixed;
-  background-color: #f1f1f1;
+  background-color: #000;
   width: 100%;
   height: 100%;
   top: 0;
@@ -108,4 +155,11 @@
 .menu-dropdown ul li {
   text-align: center;
   margin-bottom: 10px;
+}
+.footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
