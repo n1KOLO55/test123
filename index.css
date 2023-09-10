@@ -25,10 +25,10 @@
   height: 50px;
 }
 .burger_img_close {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
     position: fixed;
-    top: 5%;
+    top: 0;
 
 }
 
@@ -103,33 +103,44 @@ a {
     max-width: 100%;
     height: auto;
   }
+  .foot_text {
+    font-family: Better VCR;
+    color: #FFD700 ;/* Цвет обычной ссылки */
+    font-size: 8pt;
+  }
 }
 
 /* CSS-стили для подвала */
 .footer {
-  width: auto;
   color: #fff;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 .foot_text {
   font-family: Better VCR;
   color: #FFD700 ;/* Цвет обычной ссылки */
   font-size: 8pt;
+  flex: 1;
 }
 
 .social {
   display: flex;
   align-items: center;
   gap: 30px; /* добавляем отступ между иконками соцсетей */
-  font-size: 10pt;
+
 }
 .t_social {
+  align-items: center;
+  display: flex;
   font-family: Better VCR;
   color: #FFD700 ;/* Цвет обычной ссылки */
   text-decoration: none;
+  flex: 1;
 }
 
 /* Стили для выплывающего окна (меню) */
@@ -144,6 +155,7 @@ a {
   justify-content: center;
   align-items: center;
 }
+
 
 .menu-dropdown.open {
   display: flex;
