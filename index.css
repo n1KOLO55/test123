@@ -11,8 +11,8 @@
 }
 /* CSS стили для логотипа */
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   margin-right: 20px;
 }
 
@@ -21,8 +21,8 @@
   height: auto;
 }
 .burger_img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 .burger_img_close {
   width: 50px;
