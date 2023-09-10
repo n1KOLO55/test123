@@ -27,7 +27,9 @@
 .burger_img_close {
   width: 50px;
   height: 50px;
-  margin-right: 20%;
+    position: fixed;
+    top: 0;
+
 }
 
 /* CSS-стили для ссылок меню в шапке */
